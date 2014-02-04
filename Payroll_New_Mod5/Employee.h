@@ -1,5 +1,7 @@
 #include <string>
 
+namespace Records
+{
 	class Employee
 	{
 	public:
@@ -22,7 +24,7 @@
 		void compute_overtime_hours();
 		double get_overtime_hours();
 
-		void set_regular_hours();
+		void compute_regular_hours();
 		double get_regular_hours();
 
 		void compute_regular_pay();
@@ -39,6 +41,10 @@
 
 		void compute_net_pay();
 		double get_net_pay();
+
+		void print_headings();
+		void display() const;
+
 
 		Employee();
 		~Employee();
@@ -58,3 +64,4 @@
 		double tax_amount;
 		double net_pay;
 	};
+}
