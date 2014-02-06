@@ -87,6 +87,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Downloads\SourceCodeProfessionalCppSecondEdition_updated\SourceCodeProfessionalCppSecondEdition\932445c01_code\EmployeeDB\DatabaseTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\SourceCodeProfessionalCppSecondEdition_updated\SourceCodeProfessionalCppSecondEdition\932445c01_code\EmployeeDB\UserInterface.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="EmployeeTest.cpp" />
     <ClCompile Include="stdafx.cpp" />

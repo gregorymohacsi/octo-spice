@@ -6,50 +6,50 @@ namespace Records
 	{
 	public:
 
-		void set_id(long);
-		long get_id();
+		virtual void set_id(long);
+		virtual long get_id();
 
-		void set_first_name(std::string in_first_name);
-		std::string get_first_name();
+		virtual void set_first_name(std::string in_first_name);
+		virtual std::string get_first_name();
 
-		void set_last_name(std::string in_last_name);
-		std::string get_last_name();
+		virtual void set_last_name(std::string in_last_name);
+		virtual std::string get_last_name();
 
-		void set_hours_worked(double in_hours_worked);
-		double get_hours_worked();
+		virtual void set_hours_worked(double in_hours_worked);
+		virtual double get_hours_worked();
 
-		void set_hourly_rate(double in_hourly_rate);
-		double get_hourly_rate();
+		virtual void set_hourly_rate(double in_hourly_rate);
+		virtual double get_hourly_rate();
 
-		void compute_overtime_hours();
-		double get_overtime_hours();
+		virtual void compute_overtime_hours();
+		virtual double get_overtime_hours();
 
-		void compute_regular_hours();
-		double get_regular_hours();
+		virtual void compute_regular_hours();
+		virtual double get_regular_hours();
 
-		void compute_regular_pay();
-		double get_regular_pay();
+		virtual void compute_regular_pay();
+		virtual double get_regular_pay();
 
-		void compute_overtime_pay();
-		double get_overtime_pay();
+		virtual void compute_overtime_pay();
+		virtual double get_overtime_pay();
 
-		void compute_gross_pay();
-		double get_gross_pay();
+		virtual void compute_gross_pay();
+		virtual double get_gross_pay();
 
-		void compute_tax_rate();
-		double get_tax_rate();
+		virtual void compute_tax_rate();
+		virtual double get_tax_rate();
 
-		void compute_net_pay();
-		double get_net_pay();
+		virtual void compute_net_pay();
+		virtual double get_net_pay();
 
-		void print_headings();
-		void display() const;
+		virtual void print_headings();
+		virtual void display() const;
 
 
 		Employee();
 		~Employee();
 
-	private:
+	protected:
 		long int id;
 		std::string first_name;
 		std::string last_name;
