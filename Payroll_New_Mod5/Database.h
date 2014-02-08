@@ -1,3 +1,6 @@
+#ifndef __DATABASE_H__
+#define __DATABASE_H__
+
 // Database.h
 
 #include <iostream>
@@ -24,3 +27,4 @@ namespace Records
 		int         mNextEmployeeNumber;
 	};
 }
+#endif // !__DATABASE_H__

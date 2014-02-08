@@ -1,3 +1,6 @@
+#ifndef __EMPLOYEE_H__
+#define __EMPLOYEE_H__
+
 #include <string>
 
 namespace Records
@@ -42,12 +45,15 @@ namespace Records
 		virtual void compute_net_pay();
 		virtual double get_net_pay();
 
+		virtual void set_salary(double);
+		virtual double get_salary();
+
 		virtual void print_headings();
 		virtual void display() const;
 
 
 		Employee();
-		~Employee();
+		virtual ~Employee();
 
 	protected:
 		long int id;
@@ -63,5 +69,7 @@ namespace Records
 		double tax_rate;
 		double tax_amount;
 		double net_pay;
+		double salary;
 	};
 }
+#endif

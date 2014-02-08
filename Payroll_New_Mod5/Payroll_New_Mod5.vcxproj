@@ -83,18 +83,16 @@
   <ItemGroup>
     <ClInclude Include="Database.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="SalaryEmployee.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Downloads\SourceCodeProfessionalCppSecondEdition_updated\SourceCodeProfessionalCppSecondEdition\932445c01_code\EmployeeDB\DatabaseTest.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\SourceCodeProfessionalCppSecondEdition_updated\SourceCodeProfessionalCppSecondEdition\932445c01_code\EmployeeDB\UserInterface.cpp" />
+    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="EmployeeTest.cpp" />
+    <ClCompile Include="SalaryEmployee.cpp" />
     <ClCompile Include="stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\Payroll_with_classes\Payroll_with_classes\payroll.dat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

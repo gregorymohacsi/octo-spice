@@ -161,6 +161,16 @@ namespace Records
 	{
 		return net_pay;
 	}
+	
+	void Employee::set_salary(double in_salary)
+	{
+		salary = in_salary;
+	}
+
+	double Employee::get_salary()
+	{
+		return salary;
+	}
 
 	void Employee::print_headings()
 	{
