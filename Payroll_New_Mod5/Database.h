@@ -23,7 +23,7 @@ namespace Records
 		/*void        display_current() const;
 		void        display_former() const;*/
 	protected:
-		std::vector<Employee>  mEmployees;
+		std::vector<Employee*>  mEmployees;
 		int         mNextEmployeeNumber;
 	};
 }

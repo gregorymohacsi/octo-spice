@@ -81,16 +81,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Database.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="HourlyEmployee.h" />
     <ClInclude Include="SalaryEmployee.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="EmployeeTest.cpp" />
+    <ClCompile Include="HourlyEmployee.cpp" />
     <ClCompile Include="SalaryEmployee.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
