@@ -5,7 +5,10 @@
 
 #include <iostream>
 #include <vector>
+#include <memory>
 #include "Employee.h"
+#include "HourlyEmployee.h"
+#include "SalaryEmployee.h"
 
 namespace Records
 {
@@ -16,15 +19,23 @@ namespace Records
 		Database();
 		~Database();
 
-		Employee& add_employee(std::string in_first_name, std::string in_last_name);
-		Employee& get_employee(int in_employee_number);
-		Employee& get_employee(std::string inFirstName, std::string inLastName);
-		void        display_all() const;
-		/*void        display_current() const;
-		void        display_former() const;*/
+	    void add_salaried_employee(std::string in_first_name, std::string in_last_name,
+			double in_salary, double in_hours_worked, long in_id);
+
+		std::shared_ptr<Employee> add_hourly_employee(std::string in_first_name, std::string in_last_name,
+			double in_hourly_rate, double in_hours_worked, long in_id);
+		
+		std::shared_ptr<Employee> get_employee(long in_employee_number);
+		
+		std::shared_ptr<Employee> get_employee(std::string inFirstName, std::string inLastName);
+		
+		void display_all();
+		
+		void sort_net_pay();
+		
 	protected:
-		std::vector<Employee*>  mEmployees;
-		int         mNextEmployeeNumber;
+		std::vector<std::shared_ptr<Employee>>  mEmployees;
+		//int         mNextEmployeeNumber;
 	};
 }
 #endif // !__DATABASE_H__

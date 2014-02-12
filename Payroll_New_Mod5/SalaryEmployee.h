@@ -5,7 +5,7 @@
 
 namespace Records
 {
-	class SalaryEmployee : public Records::Employee
+	class SalaryEmployee : public Employee
 	{
 	public:
 
@@ -39,7 +39,6 @@ namespace Records
 		virtual void compute_net_pay();
 		virtual double get_net_pay();
 
-		using Employee::Employee;
 		SalaryEmployee();
 		~SalaryEmployee();
 

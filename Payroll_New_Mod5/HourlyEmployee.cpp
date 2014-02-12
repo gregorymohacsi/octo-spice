@@ -4,7 +4,7 @@
 
 namespace Records
 {
-	HourlyEmployee::HourlyEmployee()
+	HourlyEmployee::HourlyEmployee() : Employee()
 	{
 	}
 

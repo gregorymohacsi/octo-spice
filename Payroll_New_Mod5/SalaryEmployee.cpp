@@ -4,8 +4,8 @@
 
 namespace Records
 {
-	SalaryEmployee::SalaryEmployee()
-		:salary(50000)
+	SalaryEmployee::SalaryEmployee() : Employee(),
+		salary(50000)
 	{
 	}
 
