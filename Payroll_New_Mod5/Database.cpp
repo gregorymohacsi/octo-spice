@@ -105,6 +105,11 @@ namespace Records
 
 	void Database::sort_net_pay()
 	{
-		sort(mEmployees.begin(), mEmployees.end());
+		sort(mEmployees.begin(), mEmployees.end(),compare_net_pay);
 	}
+}
+
+bool compare_net_pay(Records::Employee* a, Records::Employee* b)
+{
+	return a->get_net_pay() < b->get_net_pay();
 }

@@ -105,7 +105,7 @@ namespace Records
 
 	void SalaryEmployee::compute_tax_rate()
 	{
-		tax_rate = (gross_pay * .30); // not correct will do for now
+		tax_rate = .3; // not correct will do for now
 	}
 
 	double SalaryEmployee::get_tax_rate()
@@ -114,7 +114,8 @@ namespace Records
 	}
 	void SalaryEmployee::compute_net_pay()
 	{
-		net_pay = gross_pay - tax_rate; // also not correct due to tax_rate being wrong
+		tax_amount = gross_pay * tax_rate;
+		net_pay = gross_pay - (gross_pay * tax_rate); // also not correct due to tax_rate being wrong
 	}
 
 	double SalaryEmployee::get_net_pay()

@@ -65,17 +65,22 @@ namespace Records
 
 	void Employee::print_headings()
 	{
-		std::cout << std::setw(45) << "-PAYROLL REPORT-" << std::endl;
-		std::cout << "-----------------------------------------------------------------------" << std::endl;
-		std::cout << " NAME      ID       HW OT  RT-PAY   OT-PAY   GROSS    TAX   NETPAY     " << std::endl;
-		std::cout << "-----------------------------------------------------------------------" << std::endl;
+		std::cout << std::setw(60) << "-PAYROLL REPORT-" << std::endl;
+		std::cout << "FIRST NAME   LAST NAME   HR       HW   OTPAY     GROSS     TAX        NET    " << std::endl;
+		std::cout << "==========   =========   ==       ==   =====     =====     ===        ===    " << std::endl;
+
 	}
 
 	void Employee::display() const
 	{
 		std::cout << std::setprecision(2) << std::setiosflags(std::ios::fixed | std::ios::showpoint);
-		std::cout << std::setw(6) << last_name << std::setw(12) << id << std::setw(4) << hours_worked
-			<< std::setw(3) << overtime_hours << std::setw(8) << regular_pay << std::setw(8) << overtime_pay << std::setw(8)
-			<< gross_pay << std::setw(8) << tax_amount << std::setw(8) << net_pay << std::endl;
+		std::cout << std::setiosflags(std::ios::left) << std::setw(13) << first_name
+			<< std::setiosflags(std::ios::left) << std::setw(12) << last_name
+			<< std::setiosflags(std::ios::left) << std::setw(1) << "$" << std::setw(8) << hourly_rate
+			<< std::setiosflags(std::ios::left) << std::setw(4) << hours_worked
+			<< std::setiosflags(std::ios::left) << std::setw(1) << "$" << std::setw(9) << overtime_pay
+			<< std::setiosflags(std::ios::left) << std::setw(1) << "$" << std::setw(8) << gross_pay
+			<< std::setiosflags(std::ios::left) << std::setw(1) << "$" << std::setw(9) << tax_amount
+			<< std::setiosflags(std::ios::left) << std::setw(1) << "$" << std::setw(9) << net_pay << std::endl;
 	}
 }
