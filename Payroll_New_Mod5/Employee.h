@@ -52,6 +52,8 @@ namespace Records
 		Employee();
 		virtual ~Employee();
 
+		double net_pay;
+
 	protected:
 		long int id;
 		std::string first_name;
@@ -66,7 +68,7 @@ namespace Records
 		double gross_pay;
 		double tax_rate;
 		double tax_amount;
-		double net_pay;
+		
 	};
 }
 #endif

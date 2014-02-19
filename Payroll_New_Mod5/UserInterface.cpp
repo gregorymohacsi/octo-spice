@@ -98,7 +98,7 @@ void hire_hourly(Database& inDB)
 	{
 		inDB.add_hourly_employee(firstName, lastName, hourly_rate, hours_worked,in_id);
 	}
-	catch (const std::exception&)
+	catch (const exception&)
 	{
 		cerr << "Unable to add new employee!" << endl;
 	}
@@ -126,7 +126,7 @@ void hire_salaried(Database& inDB)
 	{
 		inDB.add_salaried_employee(firstName, lastName, salary, hours_worked, in_id);
 	}
-	catch (const std::exception&)
+	catch (const exception&)
 	{
 		cerr << "Unable to add new employee!" << endl;
 	}
@@ -174,3 +174,4 @@ void sort_employees(Database& inDB)
 {
 	inDB.sort_net_pay();
 }
+

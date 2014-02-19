@@ -33,7 +33,7 @@ namespace Records
 		
 		void sort_net_pay();
 		
-		bool compare_net_pay(Employee* a, Employee* b);
+		
 
 	protected:
 		std::vector<std::shared_ptr<Employee>>  mEmployees;

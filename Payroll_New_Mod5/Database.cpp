@@ -10,6 +10,15 @@
 
 using namespace std;
 
+struct compare_net_pay
+{
+	inline bool operator() (shared_ptr<Records::Employee> a, shared_ptr<Records::Employee> b)
+	{
+		return(a->net_pay < b->net_pay);
+	}
+};
+
+
 namespace Records
 {
 
@@ -105,11 +114,7 @@ namespace Records
 
 	void Database::sort_net_pay()
 	{
-		sort(mEmployees.begin(), mEmployees.end(),compare_net_pay);
+		sort(mEmployees.begin(), mEmployees.end(),compare_net_pay());
 	}
 }
 
-bool compare_net_pay(Records::Employee* a, Records::Employee* b)
-{
-	return a->get_net_pay() < b->get_net_pay();
-}
