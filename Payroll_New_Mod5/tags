@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Database	.\Database.cpp	/^	Database::Database() $/;"	f	class:Records::Database
+Database	.\Database.h	/^	class Database$/;"	c	namespace:Records
+Employee	.\Employee.cpp	/^	Employee::Employee()$/;"	f	class:Records::Employee
+Employee	.\Employee.h	/^	class Employee$/;"	c	namespace:Records
+HourlyEmployee	.\HourlyEmployee.cpp	/^	HourlyEmployee::HourlyEmployee() : Employee()$/;"	f	class:Records::HourlyEmployee
+HourlyEmployee	.\HourlyEmployee.h	/^	class HourlyEmployee : public Records::Employee$/;"	c	namespace:Records
+Records	.\Database.cpp	/^namespace Records$/;"	n	file:
+Records	.\Database.h	/^namespace Records$/;"	n
+Records	.\Employee.cpp	/^namespace Records$/;"	n	file:
+Records	.\Employee.h	/^namespace Records$/;"	n
+Records	.\HourlyEmployee.cpp	/^namespace Records$/;"	n	file:
+Records	.\HourlyEmployee.h	/^namespace Records$/;"	n
+Records	.\SalaryEmployee.cpp	/^namespace Records$/;"	n	file:
+Records	.\SalaryEmployee.h	/^namespace Records$/;"	n
+SalaryEmployee	.\SalaryEmployee.cpp	/^	SalaryEmployee::SalaryEmployee() : Employee(),$/;"	f	class:Records::SalaryEmployee
+SalaryEmployee	.\SalaryEmployee.h	/^	class SalaryEmployee : public Employee$/;"	c	namespace:Records
+__DATABASE_H__	.\Database.h	2;"	d
+__EMPLOYEE_H__	.\Employee.h	2;"	d
+__HOURLYEMPLOYEE_H__	.\HourlyEmployee.h	2;"	d
+__SALARYEMPLOYEE_H__	.\SalaryEmployee.h	2;"	d
+add_hourly_employee	.\Database.cpp	/^	shared_ptr<Employee> Database::add_hourly_employee(string in_first_name, string in_last_name,$/;"	f	class:Records::Database
+add_salaried_employee	.\Database.cpp	/^ void Database::add_salaried_employee(string in_first_name, string in_last_name,$/;"	f	class:Records::Database
+compare_net_pay	.\Database.cpp	/^struct compare_net_pay$/;"	s	file:
+compute_gross_pay	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_gross_pay()$/;"	f	class:Records::HourlyEmployee
+compute_gross_pay	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_gross_pay()$/;"	f	class:Records::SalaryEmployee
+compute_net_pay	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_net_pay()$/;"	f	class:Records::HourlyEmployee
+compute_net_pay	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_net_pay()$/;"	f	class:Records::SalaryEmployee
+compute_overtime_hours	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_overtime_hours()$/;"	f	class:Records::HourlyEmployee
+compute_overtime_hours	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_overtime_hours()$/;"	f	class:Records::SalaryEmployee
+compute_overtime_pay	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_overtime_pay()$/;"	f	class:Records::HourlyEmployee
+compute_overtime_pay	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_overtime_pay()$/;"	f	class:Records::SalaryEmployee
+compute_regular_hours	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_regular_hours()$/;"	f	class:Records::HourlyEmployee
+compute_regular_hours	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_regular_hours()$/;"	f	class:Records::SalaryEmployee
+compute_regular_pay	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_regular_pay()$/;"	f	class:Records::HourlyEmployee
+compute_regular_pay	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_regular_pay()$/;"	f	class:Records::SalaryEmployee
+compute_tax_rate	.\HourlyEmployee.cpp	/^	void HourlyEmployee::compute_tax_rate()$/;"	f	class:Records::HourlyEmployee
+compute_tax_rate	.\SalaryEmployee.cpp	/^	void SalaryEmployee::compute_tax_rate()$/;"	f	class:Records::SalaryEmployee
+display	.\Employee.cpp	/^	void Employee::display() const$/;"	f	class:Records::Employee
+displayMenu	.\UserInterface.cpp	/^int displayMenu()$/;"	f
+display_all	.\Database.cpp	/^	void Database::display_all()$/;"	f	class:Records::Database
+find_employee_id	.\UserInterface.cpp	/^void find_employee_id(Database& inDB)$/;"	f
+find_employee_name	.\UserInterface.cpp	/^void find_employee_name(Database& inDB)$/;"	f
+first_name	.\Employee.h	/^		std::string first_name;$/;"	m	class:Records::Employee
+get_employee	.\Database.cpp	/^	shared_ptr<Employee> Database::get_employee(long in_employee_number)$/;"	f	class:Records::Database
+get_employee	.\Database.cpp	/^	shared_ptr<Employee> Database::get_employee(string in_first_name, string in_last_name)$/;"	f	class:Records::Database
+get_first_name	.\Employee.cpp	/^	std::string Employee::get_first_name()$/;"	f	class:Records::Employee
+get_gross_pay	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_gross_pay()$/;"	f	class:Records::HourlyEmployee
+get_gross_pay	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_gross_pay()$/;"	f	class:Records::SalaryEmployee
+get_hourly_rate	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_hourly_rate()$/;"	f	class:Records::HourlyEmployee
+get_hourly_rate	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_hourly_rate()$/;"	f	class:Records::SalaryEmployee
+get_hours_worked	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_hours_worked()$/;"	f	class:Records::HourlyEmployee
+get_hours_worked	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_hours_worked()$/;"	f	class:Records::SalaryEmployee
+get_id	.\Employee.cpp	/^	long Employee::get_id()$/;"	f	class:Records::Employee
+get_last_name	.\Employee.cpp	/^	std::string Employee::get_last_name()$/;"	f	class:Records::Employee
+get_net_pay	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_net_pay()$/;"	f	class:Records::HourlyEmployee
+get_net_pay	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_net_pay()$/;"	f	class:Records::SalaryEmployee
+get_overtime_hours	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_overtime_hours()$/;"	f	class:Records::HourlyEmployee
+get_overtime_hours	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_overtime_hours()$/;"	f	class:Records::SalaryEmployee
+get_overtime_pay	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_overtime_pay()$/;"	f	class:Records::HourlyEmployee
+get_overtime_pay	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_overtime_pay()$/;"	f	class:Records::SalaryEmployee
+get_regular_hours	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_regular_hours()$/;"	f	class:Records::HourlyEmployee
+get_regular_hours	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_regular_hours()$/;"	f	class:Records::SalaryEmployee
+get_regular_pay	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_regular_pay()$/;"	f	class:Records::HourlyEmployee
+get_regular_pay	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_regular_pay()$/;"	f	class:Records::SalaryEmployee
+get_salary	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_salary()$/;"	f	class:Records::SalaryEmployee
+get_tax_rate	.\HourlyEmployee.cpp	/^	double HourlyEmployee::get_tax_rate()$/;"	f	class:Records::HourlyEmployee
+get_tax_rate	.\SalaryEmployee.cpp	/^	double SalaryEmployee::get_tax_rate()$/;"	f	class:Records::SalaryEmployee
+gross_pay	.\Employee.h	/^		double gross_pay;$/;"	m	class:Records::Employee
+hire_hourly	.\UserInterface.cpp	/^void hire_hourly(Database& inDB)$/;"	f
+hire_salaried	.\UserInterface.cpp	/^void hire_salaried(Database& inDB)$/;"	f
+hourly_rate	.\Employee.h	/^		double hourly_rate;$/;"	m	class:Records::Employee
+hours_worked	.\Employee.h	/^		double hours_worked;$/;"	m	class:Records::Employee
+id	.\Employee.h	/^		long int id;$/;"	m	class:Records::Employee
+kFirstEmployeeNumber	.\Database.h	/^	const int kFirstEmployeeNumber = 1000;$/;"	m	namespace:Records
+last_name	.\Employee.h	/^		std::string last_name;$/;"	m	class:Records::Employee
+mEmployees	.\Database.h	/^		std::vector<std::shared_ptr<Employee>>  mEmployees;$/;"	m	class:Records::Database
+main	.\EmployeeTest.cpp	/^int main()$/;"	f
+main	.\UserInterface.cpp	/^int main()$/;"	f
+net_pay	.\Employee.h	/^		double net_pay;$/;"	m	class:Records::Employee
+operator ()	.\Database.cpp	/^	inline bool operator() (shared_ptr<Records::Employee> a, shared_ptr<Records::Employee> b)$/;"	f	struct:compare_net_pay
+overtime_hours	.\Employee.h	/^		double overtime_hours;$/;"	m	class:Records::Employee
+overtime_pay	.\Employee.h	/^		double overtime_pay;$/;"	m	class:Records::Employee
+print_headings	.\Employee.cpp	/^	void Employee::print_headings()$/;"	f	class:Records::Employee
+regular_hours	.\Employee.h	/^		double regular_hours;$/;"	m	class:Records::Employee
+regular_pay	.\Employee.h	/^		double regular_pay;$/;"	m	class:Records::Employee
+salary	.\SalaryEmployee.h	/^		double salary;$/;"	m	class:Records::SalaryEmployee
+set_first_name	.\Employee.cpp	/^	void Employee::set_first_name(std::string in_first_name)$/;"	f	class:Records::Employee
+set_hourly_rate	.\HourlyEmployee.cpp	/^	void HourlyEmployee::set_hourly_rate(double in_hourly_rate)$/;"	f	class:Records::HourlyEmployee
+set_hourly_rate	.\SalaryEmployee.cpp	/^	void SalaryEmployee::set_hourly_rate(double in_salary)$/;"	f	class:Records::SalaryEmployee
+set_hours_worked	.\HourlyEmployee.cpp	/^	void HourlyEmployee::set_hours_worked(double in_hours_worked)$/;"	f	class:Records::HourlyEmployee
+set_hours_worked	.\SalaryEmployee.cpp	/^	void SalaryEmployee::set_hours_worked(double in_hours_worked)$/;"	f	class:Records::SalaryEmployee
+set_id	.\Employee.cpp	/^	void Employee::set_id(long in_id)$/;"	f	class:Records::Employee
+set_last_name	.\Employee.cpp	/^	void Employee::set_last_name(std::string in_last_name)$/;"	f	class:Records::Employee
+set_salary	.\SalaryEmployee.cpp	/^	void SalaryEmployee::set_salary(double in_salary)$/;"	f	class:Records::SalaryEmployee
+sort_employees	.\UserInterface.cpp	/^void sort_employees(Database& inDB)$/;"	f
+sort_net_pay	.\Database.cpp	/^	void Database::sort_net_pay()$/;"	f	class:Records::Database
+tax_amount	.\Employee.h	/^		double tax_amount;$/;"	m	class:Records::Employee
+tax_rate	.\Employee.h	/^		double tax_rate;$/;"	m	class:Records::Employee
+~Database	.\Database.cpp	/^	Database::~Database()$/;"	f	class:Records::Database
+~Employee	.\Employee.cpp	/^	Employee::~Employee()$/;"	f	class:Records::Employee
+~HourlyEmployee	.\HourlyEmployee.cpp	/^	HourlyEmployee::~HourlyEmployee()$/;"	f	class:Records::HourlyEmployee
+~SalaryEmployee	.\SalaryEmployee.cpp	/^	SalaryEmployee::~SalaryEmployee()$/;"	f	class:Records::SalaryEmployee

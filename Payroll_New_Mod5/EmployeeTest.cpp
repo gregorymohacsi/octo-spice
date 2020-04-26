@@ -7,64 +7,62 @@
 
 using namespace std;
 
-int main()
-{
-	cout << "Testing the Employee classes." << endl;
-	vector<Records::Employee*> emp_vec;
-	Records::HourlyEmployee emp;
-	Records::SalaryEmployee sal_emp;
+int main() {
+  cout << "Testing the Employee classes." << endl;
+  vector<Records::Employee*> emp_vec;
+  Records::HourlyEmployee emp;
+  Records::SalaryEmployee sal_emp;
 
-	Records::Employee* pemp = &emp;
-	emp.set_first_name("Marni");
-	emp.set_last_name("Kleper");
-	emp.set_id(7112233);
-	emp.set_hourly_rate(30);
-	emp.set_hours_worked(42);
-		
-	emp.compute_overtime_hours();
-	emp.compute_regular_hours();
+  Records::Employee* pemp = &emp;
+  emp.set_first_name("Marni");
+  emp.set_last_name("Kleper");
+  emp.set_id(7112233);
+  emp.set_hourly_rate(30);
+  emp.set_hours_worked(42);
 
-	cout << emp.get_first_name() << endl;
-	cout << emp.get_last_name() << endl;
-	cout << emp.get_id() << endl;
-	cout << "ot: " << emp.get_overtime_hours() << endl;
-	cout << emp.get_regular_hours() << endl;
+  emp.compute_overtime_hours();
+  emp.compute_regular_hours();
 
-	emp_vec.push_back(pemp);
+  cout << emp.get_first_name() << endl;
+  cout << emp.get_last_name() << endl;
+  cout << emp.get_id() << endl;
+  cout << "ot: " << emp.get_overtime_hours() << endl;
+  cout << emp.get_regular_hours() << endl;
 
-	sal_emp.set_salary(99000);
-	sal_emp.set_hourly_rate(sal_emp.get_salary());
-	sal_emp.set_id(1005000);
-	sal_emp.set_first_name("SalariedEmp");
-	sal_emp.set_last_name("SalLast");
-	sal_emp.set_hours_worked(43);
-	sal_emp.compute_overtime_hours();
-	sal_emp.compute_regular_hours();
+  emp_vec.push_back(pemp);
 
-	Records::Employee* psal_emp = &sal_emp;
-	emp_vec.push_back(psal_emp);
+  sal_emp.set_salary(99000);
+  sal_emp.set_hourly_rate(sal_emp.get_salary());
+  sal_emp.set_id(1005000);
+  sal_emp.set_first_name("SalariedEmp");
+  sal_emp.set_last_name("SalLast");
+  sal_emp.set_hours_worked(43);
+  sal_emp.compute_overtime_hours();
+  sal_emp.compute_regular_hours();
 
-	system("pause");
+  Records::Employee* psal_emp = &sal_emp;
+  emp_vec.push_back(psal_emp);
 
-	cout << sal_emp.get_first_name() << endl;
-	cout << sal_emp.get_last_name() << endl;
-	cout << sal_emp.get_hourly_rate() << endl;
+  system("pause");
 
-	system("pause");
+  cout << sal_emp.get_first_name() << endl;
+  cout << sal_emp.get_last_name() << endl;
+  cout << sal_emp.get_hourly_rate() << endl;
 
-	emp.print_headings();
-	emp.display();
-	sal_emp.display();
-	cout << endl;
+  system("pause");
 
-	system("pause");
-	
-	for (int i = 0; i < emp_vec.size(); i++)
-	{
-		emp_vec[i]->display();
-	}
+  emp.print_headings();
+  emp.display();
+  sal_emp.display();
+  cout << endl;
 
-	system("pause");
+  system("pause");
 
-	return 0;
+  for (int i = 0; i < emp_vec.size(); i++) {
+    emp_vec[i]->display();
+  }
+
+  system("pause");
+
+  return 0;
 }
